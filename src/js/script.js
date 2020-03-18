@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 // let alo = 3.14;
 // console.log(alo);
@@ -30,7 +30,37 @@
 
 // console.log("2" == 2);       //ПИШЕМ 2 знака РАВНО!! Не три - ведь три знака - это уже сравнение объектов, нужно ставить 2!!!
 
-let isChecked = false,
-    isClose = false;
+// let isChecked = false,
+//     isClose = true;
    
-console.log(isChecked || !isClose); // Все собственно понятно, && - И, || - ИЛИ
+// console.log(isChecked || !isClose); // Все собственно понятно, && - И, || - ИЛИ
+
+let money = prompt("Ваш бюджет на месяц?", ''),
+    time = prompt("Введите дату в формате YYYY-MM-DD", '');
+
+let appData = {
+    budget: money,
+    timeData: time,
+    expenses: {},
+    optionalExpenses: "",
+    income: "",
+    savings: false
+};
+
+let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+    a2 = prompt("Во сколько обойдется?", ''),
+    a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+    a4 = prompt("Во сколько обойдется?", '');
+
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
+
+alert(appDatabudget / 30);
+close();
+
+
+
+
+
+
+
